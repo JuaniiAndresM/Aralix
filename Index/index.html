@@ -8,6 +8,10 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,12 +28,12 @@
         </p>
         <div class="botones-landing">
             <a href="../Form/Contacto.html" class="landing-button1">Contactáme</a>
-            <a href="" class="landing-button2">Más Información</a>
+            <a href="#informacion" class="landing-button2">Más Información</a>
         </div>
-        <p id="landing-arrow" class="fa">&#xf103;</p>
+        <a href="#Cards" id="landing-arrow" class="fa">&#xf103;</a>
     </div>
 
-    <section class="Cards">
+    <section class="Cards" id="Cards">
 
         <div class="card-wrapper">
             <div class="card-center">
@@ -91,7 +95,7 @@
 
     </section>
 
-    <section class="informacion">
+    <section class="informacion" id="informacion">
         <div class="informacion-wrapper">
             <div class="icon-wrapper">
                 <img class="info-icon" src="../img/Informacion Icono.svg" alt="">
