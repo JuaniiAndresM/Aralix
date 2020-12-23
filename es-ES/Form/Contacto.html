@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aralix | Contacto</title>
+    <link rel="shortcut icon" href="../../img/favicon Dorado.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../js/function.js"></script>
+</head>
+<body onload="hfindex()">
+    <div id="header"></div>
+
+    <section class="contacto-wrapper">
+        <div class="contacto">
+            <div class="contacto-logo">
+                <img class="logo" src="../../img/favicon Dorado.svg" alt="">
+            </div>
+            <hr>
+            <div class="contacto-body">
+                <h1>Contacto</h1>
+
+                <form action="../PHPMailer/sendEmail.php" method="POST" id="FormContacto">
+
+                    <div class="input-wrapper">
+                        <p>Nombre:</p>
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <p>Email:</p>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <p>Comentario:</p>
+                        <textarea name="comentario" required></textarea>
+                        <input class="submit" type="submit">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div id="footer"></div>
+    
+</body>
+</html>

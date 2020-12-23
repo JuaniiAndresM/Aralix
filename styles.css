@@ -7,6 +7,53 @@ body {
   background: url("img/FondoLanding.png") no-repeat center center fixed, #333333;
   font-family: "Roboto", sans-serif;
 }
+.language-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.language-logo {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.language-buttons {
+  display: flex;
+}
+
+.language-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #ffaa00;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 5rem;
+}
+.language-buttons a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.language-buttons a::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #ffaa00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.language-icon {
+  width: 30px;
+  margin-right: 10px;
+}
 .header-logo {
   margin: 2%;
   position: relative;
@@ -51,7 +98,6 @@ body {
   width: 100%;
   left: 0;
 }
-
 .burger-mobile {
   position: relative;
   z-index: 3;
@@ -617,6 +663,13 @@ h1 {
 @media screen and (max-width: 700px) {
   .galeria-info {
     margin: 5% 15%;
+  }
+  .language-buttons a {
+    margin: 3% 0;
+  }
+  .language-buttons {
+    display: flex;
+    flex-direction: column;
   }
 }
 

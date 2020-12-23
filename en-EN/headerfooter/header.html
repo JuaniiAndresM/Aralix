@@ -1,0 +1,41 @@
+<div class="header">
+    <div class="header-logo">
+        <a href="../Index/index.html">
+            <img src="../../img/Logo Dorado.svg" alt="Logo ARALIX" href="index.html" class="logo">
+        </a>
+    </div>
+    <div class="links">
+        <a href="../Index/index.html">Home</a>
+        <a href="../Galeria/Gallery.html">Gallery</a>
+        <a href="../Form/Contact.html">Contact</a>
+        <a href="">About Me</a>
+    </div>
+    <div class="burger-mobile" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div id="links-mobile">
+        <div class="links-wrapper">
+            <a href="../Index/index.html">Home</a>
+            <hr>
+            <a href="../Galeria/galeria.html">Gallery</a>
+            <hr>
+            <a href="../Form/Contacto.html">Contact</a>
+            <hr>
+            <a href="">About Me</a>
+        </div>
+    </div>
+</div>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+
+        if (document.getElementById("links-mobile").style.transform == "translateY(0%)") {
+            document.getElementById("links-mobile").style.transform = "translateY(-120%)";
+        } else {
+            document.getElementById("links-mobile").style.transform = "translateY(-0%)";
+        }
+    }
+</script>
