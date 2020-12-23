@@ -641,9 +641,12 @@ h1 {
   .card-wave {
     position: relative;
     z-index: 1;
+    top: -30px;
     width: 120%;
   }
-
+  .info-icon {
+    width: 100px;
+  }
   .card-body {
     position: absolute;
     display: flex;
